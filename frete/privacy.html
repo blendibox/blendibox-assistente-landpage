@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade – Blendibox Frete</title>
+  <meta name="description" content="Política de privacidade da extensão Blendibox Frete para Google Chrome." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f8faff;
+      color: #1a1a2e;
+    }
+
+    a { text-decoration: none; }
+
+    nav {
+      background: #062058;
+      padding: 14px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+      font-weight: 900;
+      font-size: 16px;
+    }
+
+    .nav-logo-icon {
+      width: 32px;
+      height: 32px;
+      background: #3b82f6;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+
+    .nav-back {
+      color: rgba(255,255,255,0.7);
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: color .15s;
+    }
+
+    .nav-back:hover { color: #fff; }
+
+    .page-hero {
+      background: #0a2d6e;
+      padding: 48px 32px 52px;
+      text-align: center;
+    }
+
+    .page-hero h1 {
+      font-size: 32px;
+      font-weight: 900;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .page-hero p {
+      color: rgba(255,255,255,0.65);
+      font-size: 14px;
+    }
+
+    .content {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 32px 80px;
+    }
+
+    .section {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+    }
+
+    .section-icon {
+      font-size: 24px;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .section h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #0a2d6e;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .section p {
+      font-size: 14px;
+      color: #475569;
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .section p:last-child { margin-bottom: 0; }
+
+    .section ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .section ul li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 14px;
+      color: #475569;
+      line-height: 1.65;
+    }
+
+    .li-icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      margin-top: 2px;
+    }
+
+    .li-check { background: #f0fdf4; border: 1px solid #bbf7d0; }
+    .li-cross  { background: #fef2f2; border: 1px solid #fecaca; }
+    .li-info   { background: #eff6ff; border: 1px solid #bfdbfe; }
+
+    .section b { color: #1a1a2e; font-weight: 700; }
+
+    .highlight-box {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      padding: 14px 16px;
+      font-size: 13px;
+      color: #1e40af;
+      line-height: 1.6;
+      margin-top: 14px;
+    }
+
+    .contact-box {
+      background: #0a2d6e;
+      border-radius: 14px;
+      padding: 28px 32px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .contact-box h2 {
+      font-size: 20px;
+      font-weight: 900;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .contact-box p {
+      color: rgba(255,255,255,0.65);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .contact-box a {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: #FFC107;
+      color: #062058;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 11px 22px;
+      border-radius: 7px;
+      transition: background .15s;
+    }
+
+    .contact-box a:hover { background: #FFD740; }
+
+    .updated {
+      text-align: center;
+      font-size: 12px;
+      color: #94a3b8;
+      margin-bottom: 32px;
+    }
+
+    footer {
+      background: #062058;
+      padding: 24px 32px;
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 10px;
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,0.5);
+      font-size: 12px;
+      transition: color .15s;
+    }
+
+    .footer-links a:hover { color: #fff; }
+
+    footer p {
+      font-size: 11px;
+      color: rgba(255,255,255,0.3);
+    }
+
+    @media (max-width: 600px) {
+      .page-hero h1 { font-size: 24px; }
+      .content { padding: 32px 16px 64px; }
+      .section { padding: 20px; }
+      .contact-box { padding: 24px 20px; }
+      nav { padding: 12px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">
+      <div class="nav-logo-icon">📦</div>
+      Blendibox Frete
+    </div>
+    <a href="index.html" class="nav-back">← Voltar ao site</a>
+  </nav>
+
+  <div class="page-hero">
+    <h1>Política de Privacidade</h1>
+    <p>Extensão Blendibox Frete para Google Chrome</p>
+  </div>
+
+  <div class="content">
+
+    <p class="updated">Última atualização: 20 de junho de 2025</p>
+
+    <div class="section">
+      <span class="section-icon">📋</span>
+      <h2>1. Visão Geral</h2>
+      <p>A extensão <b>Blendibox Frete</b>, desenvolvida por Blendibox (atendimento@blendibox.com.br), respeita sua privacidade. Esta política descreve quais dados são coletados, como são usados e quais direitos você possui.</p>
+      <p>Ao instalar e usar a extensão, você concorda com os termos descritos nesta política. Se não concordar, por favor desinstale a extensão.</p>
+      <div class="highlight-box">
+        🔒 Resumo: não coletamos dados pessoais além do necessário para o funcionamento da extensão. Nenhuma informação é vendida ou compartilhada com terceiros para fins comerciais.
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="section-icon">📦</span>
+      <h2>2. Dados que Coletamos</h2>
+      <ul>
+        <li>
+          <div class="li-icon li-check">✓</div>
+          <span><b>Token de acesso OAuth 2.0</b> — obtido após autorização do usuário no Melhor Envio. Armazenado localmente no seu navegador via <code>chrome.storage.local</code>. Nunca enviado a servidores da Blendibox.</span>
+        </li>
+        <li>
+          <div class="li-icon li-check">✓</div>
+          <span><b>CEP de origem padrão</b> — salvo localmente no navegador para não precisar redigitar. Não é transmitido a nenhum servidor externo além da API do Melhor Envio durante o cálculo.</span>
+        </li>
+        <li>
+          <div class="li-icon li-check">✓</div>
+          <span><b>Dados do pacote</b> (CEPs, dimensões, peso, valor) — enviados diretamente à API oficial do Melhor Envio apenas no momento do cálculo. Não são armazenados pela Blendibox.</span>
+        </li>
+        <li>
+          <div class="li-icon li-cross">✗</div>
+          <span><b>Não coletamos:</b> histórico de navegação, senhas, dados de pagamento, localização, cookies de terceiros, nem qualquer dado fora do escopo descrito acima.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <span class="section-icon">🔐</span>
+      <h2>3. Autenticação OAuth 2.0</h2>
+      <p>A extensão utiliza o protocolo <b>OAuth 2.0</b> para autenticar sua conta do Melhor Envio. Isso significa que:</p>
+      <ul>
+        <li>
+          <div class="li-icon li-check">✓</div>
+          <span>Sua senha <b>nunca é vista ou armazenada</b> pela extensão. O login acontece diretamente nos servidores do Melhor Envio.</span>
+        </li>
+        <li>
+          <div class="li-icon li-check">✓</div>
+          <span>O <b>access token</b> recebido após autorização é armazenado somente no seu navegador (<code>chrome.storage.local</code>), inacessível a outros sites ou extensões.</span>
+        </li>
+        <li>
+          <div class="li-icon li-check">✓</div>
+          <span>Você pode revogar o acesso da extensão a qualquer momento no painel do Melhor Envio em <b>Minha Conta → Aplicativos</b>.</span>
+        </li>
+        <li>
+          <div class="li-icon li-check">✓</div>
+          <span>Ao clicar em <b>"Desconectar"</b> dentro da extensão, todos os tokens são removidos imediatamente do seu navegador.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <span class="section-icon">🌐</span>
+      <h2>4. Comunicação com Servidores Externos</h2>
+      <p>A extensão se comunica <b>exclusivamente</b> com os seguintes domínios:</p>
+      <ul>
+        <li>
+          <div class="li-icon li-info">→</div>
+          <span><b>sandbox.melhorenvio.com.br</b> — ambiente de testes do Melhor Envio</span>
+        </li>
+        <li>
+          <div class="li-icon li-info">→</div>
+          <span><b>www.melhorenvio.com.br</b> — ambiente de produção do Melhor Envio</span>
+        </li>
+      </ul>
+      <p style="margin-top:14px">Nenhuma requisição é feita a servidores da Blendibox. Não há analytics, rastreadores ou serviços de terceiros embutidos.</p>
+    </div>
+
+    <div class="section">
+      <span class="section-icon">💾</span>
+      <h2>5. Armazenamento Local</h2>
+      <p>Todos os dados salvos pela extensão ficam no <b>armazenamento local do seu Chrome</b> (<code>chrome.storage.local</code>). Esses dados:</p>
+      <ul>
+        <li><div class="li-icon li-check">✓</div><span>Ficam apenas no seu dispositivo</span></li>
+        <li><div class="li-icon li-check">✓</div><span>Não são sincronizados com a conta Google ou outros dispositivos</span></li>
+        <li><div class="li-icon li-check">✓</div><span>São apagados ao desinstalar a extensão ou ao clicar em "Desconectar"</span></li>
+        <li><div class="li-icon li-cross">✗</div><span>Não são acessíveis por outros sites, extensões ou pela Blendibox</span></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <span class="section-icon">📢</span>
+      <h2>6. Anúncios</h2>
+      <p>A extensão é gratuita e exibe um <b>banner de anúncio</b> no topo da interface. Os anúncios exibidos são:</p>
+      <ul>
+        <li><div class="li-icon li-info">→</div><span>Estáticos, servidos por imagem hospedada pela própria Blendibox ou por rede de anúncios parceira</span></li>
+        <li><div class="li-icon li-cross">✗</div><span>Não utilizam cookies de rastreamento nem criam perfis comportamentais</span></li>
+        <li><div class="li-icon li-cross">✗</div><span>Não coletam dados sobre sua navegação ou uso da extensão</span></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <span class="section-icon">👤</span>
+      <h2>7. Seus Direitos</h2>
+      <p>Você tem os seguintes direitos em relação aos seus dados:</p>
+      <ul>
+        <li><div class="li-icon li-check">✓</div><span><b>Acesso:</b> todos os dados estão no seu próprio navegador, acessíveis via DevTools do Chrome</span></li>
+        <li><div class="li-icon li-check">✓</div><span><b>Exclusão:</b> desinstale a extensão ou clique em "Desconectar" para apagar tudo</span></li>
+        <li><div class="li-icon li-check">✓</div><span><b>Revogação:</b> cancele o acesso da extensão à sua conta diretamente no painel do Melhor Envio</span></li>
+        <li><div class="li-icon li-check">✓</div><span><b>Portabilidade:</b> não mantemos seus dados em servidores, portanto não há nada a exportar</span></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <span class="section-icon">🔄</span>
+      <h2>8. Alterações nesta Política</h2>
+      <p>Podemos atualizar esta política eventualmente. Em caso de mudanças significativas, avisaremos através de uma atualização da extensão na Chrome Web Store.</p>
+      <p>A data de "última atualização" no topo desta página sempre refletirá a versão mais recente. Recomendamos revisitar esta página periodicamente.</p>
+    </div>
+
+    <div class="contact-box">
+      <h2>Dúvidas ou solicitações?</h2>
+      <p>Entre em contato com o responsável pela extensão.</p>
+      <a href="mailto:atendimento@blendibox.com.br">
+        ✉️ atendimento@blendibox.com.br
+      </a>
+    </div>
+
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="assistente.blendibox.com.br/frete">assistente.blendibox.com.br/frete</a>
+      <a href="mailto:atendimento@blendibox.com.br<">atendimento@blendibox.com.br</a>
+      <a href="privacy.html">Política de Privacidade</a>
+      <a href="https://melhorenvio.com.br" target="_blank" rel="noopener">Melhor Envio</a>
+    </div>
+    <p>© 2026 Blendibox · Esta extensão recebe comissão de afiliado do Melhor Envio, caso você decida contratar o servico usando o banner na extensão.</p>
+  </footer>
+
+</body>
+</html>
